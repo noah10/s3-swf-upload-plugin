@@ -21,7 +21,7 @@ package com.nathancolgate.s3_swf_upload {
 			// Create options list for file s3 upload metadata 
 			upload_options									= new S3UploadOptions;
 			upload_options.FileSize         = _file.size.toString();
-			upload_options.FileName         = getFileName(_file);
+			upload_options.FileName         = '';
 			upload_options.ContentType      = getContentType(upload_options.FileName);
 			upload_options.key              = prefixPath + upload_options.FileName;
 			
